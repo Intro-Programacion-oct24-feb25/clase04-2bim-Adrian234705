@@ -24,7 +24,14 @@ public class Ejemplo08 {
        System.out.print("INGRESE EL SEGUNDO NUMERO"); 
        valor2 = entrada.nextInt();  
        System.out.printf("Ingrese la tabla que desee:" + "\n" + "1.Suma" 
-               +"2.Multiplicacion"); 
+               +"\n" +"2.Multiplicacion"); 
+       opcion = entrada.nextInt(); 
+       switch(opcion){
+           case 1: 
+               mensajeSuma = obtenerTablaSumar(valor1,valor2); 
+               System.out.printf("%s\n",mensajeSuma);
+               break; 
+               
         // 
         String mensajeSuma;
         String mensajeSumaDos;
@@ -39,6 +46,9 @@ public class Ejemplo08 {
         System.out.printf("%s\n", mensajeSuma);
         System.out.printf("%s\n", mensajeSumaDos);
     }
+       
+    }
+       
         
     public static String obtenerTablaSumar(int limite, int tabla){
         int operacion;
