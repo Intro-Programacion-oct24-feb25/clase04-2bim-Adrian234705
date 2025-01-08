@@ -5,6 +5,8 @@
  */
 package ejemplos01;
 
+import java.util.Scanner;
+
 /**
  *
  * @author reroes
@@ -13,10 +15,16 @@ public class Ejemplo03 {
 
     public static void main(String[] args) {
         // 
-        int valor = obtenerSuma(10, 30); // se invoca al método 
+        Scanner entrada = new Scanner (System.in); 
+        int valor1; 
+        int valor2; 
                                          // obtenerSuma
-        System.out.printf("El valor de la suma es: %d\n", valor);
-        
+        System.out.printf("Ingrese el valor primario");
+        valor1 = entrada.nextInt(); 
+        System.out.printf("Ingrese el valor secundario");
+        valor2 = entrada.nextInt(); 
+         int valor = obtenerSuma(valor1, valor2); // se invoca al método 
+
         // System.out.printf("El valor de la suma es: %d\n", obtenerSuma(10, 30));
     }
     
